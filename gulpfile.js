@@ -1,4 +1,4 @@
-const { src, dest, watch, parallel, series } = require('gulp');
+const { src, dest, watch, parallel, series, } = require('gulp');
 
 const scss         = require('gulp-sass');
 const concat       = require('gulp-concat');
@@ -52,7 +52,7 @@ function scripts() {
 }
 
 function styles() {
-  return src('app/scss/**/*.scss')  /* style */
+  return src('app/scss/style.scss')
     .pipe(scss({outputStyle: 'expanded'}))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
@@ -84,7 +84,7 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
-exports.cleanDist = cleanDist;
+exports.cleanDist = cleanDist
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching,)
+exports.default = parallel(styles, scripts, browsersync, watching)
