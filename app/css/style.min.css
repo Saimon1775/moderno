@@ -71,6 +71,57 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?34yx27");
+  src: url("../fonts/icomoon.eot?34yx27#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?34yx27") format("truetype"), url("../fonts/icomoon.woff?34yx27") format("woff"), url("../fonts/icomoon.svg?34yx27#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-near_me:before {
+  content: "\e900";
+}
+
+.icon-map-marker:before {
+  content: "\f041";
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a";
+}
+
+.icon-phone:before {
+  content: "\f095";
+}
+
+.icon-bolt:before {
+  content: "\f0e7";
+}
+
+.icon-flash:before {
+  content: "\f0e7";
+}
+
+.icon-angle-right:before {
+  content: "\f105";
+}
+
 .header__top-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,7 +566,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 530px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,4 +648,197 @@ body {
   padding: 30px 10px;
   color: #263238;
   text-align: center;
+}
+
+.footer {
+  background-color: #263238;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0px 80px;
+}
+
+.footer__copy {
+  border-top: 1px solid #424d53;
+}
+
+.footer__copy-text {
+  text-align: center;
+  font-size: 15px;
+  color: #919699;
+  padding: 25px 0px 25px;
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+}
+
+.footer__col-menu {
+  max-width: 220px;
+}
+
+.footer__col-title {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.footer__col-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 51px;
+  height: 3px;
+  background-color: #8bc34a;
+}
+
+.footer__col-text {
+  color: #b7c3c8;
+  margin-bottom: 30px;
+}
+
+.footer__info {
+  margin-top: 18px;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding-left: 30px;
+  position: relative;
+}
+
+.footer__info::before {
+  content: '\f041';
+  font-family: 'icomoon';
+  color: #8bc34a;
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+}
+
+.footer__info-phone::before {
+  content: '\f095';
+}
+
+.footer__col-list a {
+  margin-bottom: 12px;
+  color: #b7c3c8;
+  padding-left: 22px;
+  position: relative;
+}
+
+.footer__col-list a::before {
+  content: '\f105';
+  color: #8bc34a;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  font-family: 'icomoon';
+}
+
+.footer__social-link {
+  margin-bottom: 33px;
+}
+
+.footer__social-link li {
+  display: inline-block;
+}
+
+.footer__social-link li + li {
+  margin-left: 7px;
+}
+
+.footer__social-link a {
+  width: 28px;
+  height: 28px;
+  background-image: url(../images/css_sprites.png);
+}
+
+.link-twitter {
+  background-position: -29px 0;
+}
+
+.link-youtube {
+  background-position: 0 -29px;
+}
+
+.link-pinterest {
+  background-position: -30px -30px;
+}
+
+.link-linledin {
+  background-position: -61px 0;
+}
+
+.footer__form-title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__form {
+  position: relative;
+}
+
+.footer__form input {
+  border: none;
+  background-color: #2f3c43;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 13px;
+  padding-right: 50px;
+}
+
+.footer__form input::-webkit-input-placeholder {
+  color: #697378;
+}
+
+.footer__form input::-moz-placeholder {
+  color: #697378;
+}
+
+.footer__form input:-ms-input-placeholder {
+  color: #697378;
+}
+
+.footer__form input::-ms-input-placeholder {
+  color: #697378;
+}
+
+.footer__form input::placeholder {
+  color: #697378;
+}
+
+.footer__form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #8bc34a;
+  border: none;
+  height: 40px;
+  width: 43px;
+  cursor: pointer;
+}
+
+.footer__form button::before {
+  content: '\e900';
+  position: absolute;
+  font-family: 'icomoon';
+  color: #fff;
+  font-size: 20px;
+  top: 11px;
+  left: 11px;
 }
