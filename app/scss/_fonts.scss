@@ -21,7 +21,7 @@
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: never;
+    /* speak: never; */
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -54,4 +54,113 @@
   .icon-angle-right:before {
     content: "\f105";
   }
-  
+
+.icon-mail-envelope-closed:before {
+  content: "\e901";
+}
+.icon-bell:before {
+  content: "\e900";
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon-1.eot?idgm6');
+  src:  url('../fonts/icomoon-1.eot?idgm6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon-1.ttf?idgm6') format('truetype'),
+    url('../fonts/icomoon-1.woff?idgm6') format('woff'),
+    url('../fonts/icomoon-1.svg?idgm6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-reply:before {
+  content: "\e908";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e901";
+}
+.icon-group:before {
+  content: "\e909";
+}
+.icon-social-linkedin:before {
+  content: "\e90a";
+}
+.icon-heart:before {
+  content: "\e906";
+}
+.icon-bell:before {
+  content: "\e900";
+}
+.icon-chevron-down:before {
+  content: "\e902";
+}
+.icon-sort:before {
+  content: "\f0dc";
+}
+.icon-unsorted:before {
+  content: "\f0dc";
+}
+.icon-meh-o:before {
+  content: "\f11a";
+}
+.icon-cny:before {
+  content: "\f157";
+}
+.icon-jpy:before {
+  content: "\f157";
+}
+.icon-rmb:before {
+  content: "\f157";
+}
+.icon-yen:before {
+  content: "\f157";
+}
+.icon-sort-amount-desc:before {
+  content: "\f161";
+}
+.icon-foursquare:before {
+  content: "\f180";
+}
+.icon-pagelines:before {
+  content: "\f18c";
+}
+.icon-edit:before {
+  content: "\e903";
+}
+.icon-pencil-square-o:before {
+  content: "\e903";
+}
+.icon-th-list:before {
+  content: "\e904";
+}
+.icon-th-large:before {
+  content: "\e905";
+}
+.icon-locked:before {
+  content: "\e907";
+}
+.icon-user:before {
+  content: "\e925";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-bubbles4:before {
+  content: "\e970";
+}
+
